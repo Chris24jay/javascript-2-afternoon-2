@@ -99,7 +99,7 @@ function evenFinder (arr){
       if(arr[i]%2===0){
         evenNums.push(arr[i])
       }
-    }return evenNums
+    } return evenNums
   
 }
 
@@ -130,6 +130,18 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(param1){
+  let newArray = [[],[]];
+  for(let i=0; i<param1.length; i++){
+    if(param1[i]%2===0){
+      newArray[0].push(param1[i])
+    }
+    else if(param1[i]%2!==0){
+      newArray[1].push(param1[i])
+    }
+  }
+   return newArray
+};
 
 
 
@@ -151,6 +163,14 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+function finder(arr){
+  let random = getRandomArbitrary()
+  if(arr.includes(random)===true){
+    return true
+  }
+  return false
+  
+}
 
 
 
@@ -180,6 +200,12 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function removeItem(myGroceryList,gotIt){
+  if(myGroceryList.includes(gotIt) === false){
+    myGroceryList.splice(i,1)
+  }
+return myGroceryList      
+}
 
 
 
